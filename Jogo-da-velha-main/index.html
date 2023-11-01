@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/script.js"></script>
+</head>
+<body>
+    <h1># Jogo da velha</h1>
+
+    <div class="choosePlayer">
+        <b>Qual você deseja jogar?</b>
+        <div class="players">
+            <div class="player X active">X</div>
+            <div class="player O">O</div>
+        </div>
+        <button class="startGame">Iniciar</button>
+    </div>
+
+    <div class="area--game">
+
+        <div class="selectPlayer">
+            <div class="info--placar">
+                <div class="player--info">
+                    <div class="player first">Você <b>X</b></div>
+                </div>
+                <div class="player--score">
+                    <div class="score-players"> 
+                        <div class="score--left">0</div>
+                        <div class="VS">VS</div>
+                        <div class="score--right">0</div>
+                    </div>
+                    <div class="info--turn blink"></div>
+                    <button class="changePlayer">Trocar</button>
+                </div>
+                <div class="player--info">
+                    <div class="player second">Player 2<b>O</b></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="area">
+            <div data-item="a1" class="item b r"></div>
+            <div data-item="a2" class="item b r"></div>
+            <div data-item="a3" class="item b"></div>
+    
+            <div data-item="b1" class="item b r"></div>
+            <div data-item="b2" class="item b r"></div>
+            <div data-item="b3" class="item b"></div>
+    
+            <div data-item="c1" class="item r"></div>
+            <div data-item="c2" class="item r"></div>
+            <div data-item="c3" class="item"></div>
+        </div>
+    </div>
+</body>
+</html>
